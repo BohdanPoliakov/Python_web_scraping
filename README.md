@@ -1,5 +1,3 @@
-# Projektss
-
 # Euronics iPhone Datu Izguve
 
 ## Uzdevums
@@ -44,7 +42,4 @@ pip install requests
 pip install beautifulsoup4
 pip install xlsxwriter
 
-## Autori
-Poliakov Bohdan 231RDB415 12 gr. bohdan.poliakov@edu.rtu.lv
-Laura Dubrovska 231RDB049 11 gr. laura.dubrovska@edu.rtu.lv
 
