@@ -1,43 +1,43 @@
-# Euronics iPhone Datu Izguve
+# Euronics iPhone Data Retrieval
 
-## Uzdevums
+## Task
 
-Šī programmatūra ir izstrādāta, lai ļautu lietotājam ērti iegūt informāciju par iPhone produktiem no Euronics tīmekļa vietnes. Uzdevums šai programmā ir sniegt iespēju lietotājam norādīt konkrētu iPhone modeļa nosaukumu, un pēc tam programmā tiks parādīti visi saistītie produkti ar to saistītajiem detalizētiem datiem. Programmā tiks attēloti tālruņa varianti ar līdzīgiem nosaukumiem, piedāvājot lietotājam vizuālu priekšstatu par produktiem, iekļaujot attēlu, cenu un saiti uz preci. Tāpat programma nodrošinās iespēju izveidot Excel failu, kurā būs iekļauti visi iegūtie produkti no Euronics tīmekļa vietnes.
+This software is designed to allow the user to easily retrieve information about iPhone products from the Euronics website. The task of this software is to enable the user to specify a specific iPhone model name and then the software will display all related products with their associated details. The application will display variants of the phone with similar names, offering the user a visual representation of the products, including an image, price and a link to the product. The software will also provide the possibility to create an Excel file containing all the products retrieved from the Euronics website.
 
-## Python Bibliotēkas
+## Python Libraries
 
-Projekts izmanto vairākas Python bibliotēkas:
+The project uses several Python libraries:
 
-- `requests` - Tiešsaistes datu ieguve.
-- `BeautifulSoup` - HTML analīze un datu izguve.
-- `dataclasses` - Vienkārša sintakse datu klasēm .
-- `xlsxwriter` - Excel failu veidošana un datu ievietošana.
+- `requests` - Online data extraction.
+- `BeautifulSoup` - HTML analysis and data extraction.
+- `dataclasses` - Simple syntax for data classes.
+- `xlsxwriter` - Creating Excel files and inserting data.
 
-## Programmatūras Izstrādes Gaita
+## Software Development Workflow
 
-1. **Datu Ieguve:** Izmantojot `requests` un `BeautifulSoup`, tiek iegūti dati no Euronics tīmekļa vietnes.
-2. **Datu Apstrāde:** Dati tiek attīrīti un formatēti, izmantojot funkcijas kā `remove_extra_spaces`, `format_price` un `three_symbols_price`.
-3. **Datu Saglabāšana:** Izstrādāta funkcija `create_excel_file`, kas saglabā apstrādātos datus Excel failā.
+1. **Data Extraction:** Using `requests` and `BeautifulSoup`, data is extracted from the Euronics website.
+2. **Data Processing:** The data is cleaned and formatted using functions such as `remove_extra_spaces`, `format_price` and `three_symbols_price`.
+3. **Data Saving:** The function `create_excel_file` has been developed which saves the processed data in an Excel file.
 
-## Video Par Programmas Darbību
-Mūsu Programmas Darbības Video
-Piemērs:
+## Videos How the Programme Works
+Our Programme Activity Videos
+Example:
 https://failiem.lv/f/drushmgpj6
 
-## Programmas Izmantošana
+## Program Usage
 
-Programmu iespējams izmantot, ievadot komandu terminālī:
+You can use the program by entering a command in the terminal:
 
 ```bash
 2.py "iphone_model"
-Kur "iphone_model" ir vēlamā iPhone modeļa nosaukums.
+Where "iphone_model" is the name of the desired iPhone model.
 
-Ja vēlaties iegūt informāciju par iPhone 11, izmantojot programmu, ievadiet šādu komandu:
+If you want to get information about iPhone 11 using the program, enter the following command:
 python 2.py iPhone 11
 
-## Biblioteka
+## Library
 
-Lai varētu izpildīt programmu, ir nepieciešams instalēt šādas atkarības:
+To execute the program, you need to install the following dependencies:
 pip install requests
 pip install beautifulsoup4
 pip install xlsxwriter
